@@ -63,3 +63,44 @@ p {
     letter-spacing: 1px;
 
 }
+
+
+/* Btn */
+button {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: inherit;
+    cursor: pointer;
+    background: none;
+    color: #2f5f91;
+    border: none;
+    line-height: 1.3;
+    outline: none !important;
+}
+
+
+
+/* ==================================== */
+/* @MEDIA */
+@media (min-width: 320px) {}
+
+@media (min-width: 360px) {}
+
+@media (min-width: 411px) {}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+
+
+@media only screen and (max-width: 600px){}

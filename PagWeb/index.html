@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,447 @@
     <link rel="stylesheet" href="/CSS/Structure.css">
     <link rel="stylesheet" href="/CSS/style.css">
 </head>
+
 <body>
     <main>
-        <div class="">
-            <header>
-                <a href="#" class="logo"></a>
-            </header>
+        <div id="main-wrapper">
+            <div id="main-container" style="width: 1380px; height: 896px;">
+                <div id="caption-top" class="story-caption"></div>
+                <div id="caption-bottom" class="story-caption"></div>
+
+                <button id="menu-button">
+                    <span class="left">
+                        <span>Menu | Ngā Wāhanga</span>
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                    </span>
+                    <span class="right"></span>
+                </button>
+
+                <nav id="menu">
+                    <div class="inner">
+
+                        <div class="nav-content">
+                            <section class="nav-page visible" id="nav-chapters">
+
+                                <h1>
+                                    <span lang="en">Browse Chapters</span>
+                                    <span lang="mi">Ngā upoko</span>
+                                </h1>
+
+                                <div class="chapters">
+                                    <ol>
+                                        <li><a href="#begin">
+                                                <span lang="mi">1. Ka Hoake a Oti</span>
+                                                <span lang="en">1. Oat Sets Off</span>
+                                            </a></li>
+                                        <li><a href="#forest">
+                                                <span lang="mi">2. Te Wao Nui o Kauri</span>
+                                                <span lang="en">2. The Kauri Forest</span>
+                                            </a></li>
+                                        <li><a href="#rest">
+                                                <span lang="mi">3. Ka Whakatā</span>
+                                                <span lang="en">3. A Little Rest</span>
+                                            </a></li>
+                                        <li><a href="#amos">
+                                                <span lang="mi">4. Ko Mohi</span>
+                                                <span lang="en">4. Amos</span>
+                                            </a></li>
+                                        <li><a href="#crossing">
+                                                <span lang="mi">5. Te Whakawhitinga</span>
+                                                <span lang="en">5. The Crossing</span>
+                                            </a></li>
+                                        <li><a href="#cave">
+                                                <span lang="mi">6. Te Ana</span>
+                                                <span lang="en">6. The Cave</span>
+                                            </a></li>
+                                    </ol>
+
+                                    <ol>
+                                        <li><a href="#glowworm">
+                                                <span lang="mi">7. Pūrātoke Mokemoke</span>
+                                                <span lang="en">7. Little Glow Worm</span>
+                                            </a></li>
+                                        <li><a href="#snowyslopes">
+                                                <span lang="mi">8. Te Pīnakitanga</span>
+                                                <span lang="en">8. Snowy Slopes</span>
+                                            </a></li>
+                                        <li><a href="#freefall">
+                                                <span lang="mi">9. Ka Horo</span>
+                                                <span lang="en">9. Free Fall</span>
+                                            </a></li>
+                                        <li><a href="#onefinalpush">
+                                                <span lang="mi">10. Te Pikinga Ki Te Tihi</span>
+                                                <span lang="en">10. One Final Push</span>
+                                            </a></li>
+                                        <li><a href="#kindnesswins">
+                                                <span lang="mi">11. Te Hua o Te Aroha</span>
+                                                <span lang="en">11. Kindness Wins</span>
+                                            </a></li>
+                                    </ol>
+                                </div>
+
+                            </section>
+
+                            <section class="nav-page" id="nav-options">
+
+                                <h1>
+                                    <span lang="en">Reading Options</span>
+                                    <span lang="mi">Kōwhiringa reo</span>
+                                </h1>
+
+                                <section class="panel">
+                                    <h2>
+                                        <span lang="en">Language</span>
+                                        <span lang="mi">Reo</span>
+                                    </h2>
+                                    <ul class="languages">
+                                        <li><button data-lang="mi">Māori</button></li>
+                                        <li><button data-lang="en">English</button></li>
+                                    </ul>
+                                </section>
+
+                                <section class="panel">
+                                    <h2>
+                                        <span lang="en">Reading Mode</span>
+                                        <span lang="mi">Kōwhiringa pānui</span>
+                                    </h2>
+                                    <ul class="modes">
+                                        <li><button data-mode="manual">
+                                                <span lang="en">Read</span>
+                                                <span lang="mi">Pānui</span>
+                                            </button></li>
+                                        <li><button data-mode="default">
+                                                <span lang="en">Read to Me</span>
+                                                <span lang="mi">Pānui tahi</span>
+                                            </button></li>
+                                        <li><button data-mode="auto">
+                                                <span lang="en">Watch</span>
+                                                <span lang="mi">Mātakitaki</span>
+                                            </button></li>
+                                    </ul>
+                                </section>
+
+                                <div class="links alternative-formats">
+                                    <a href="https://youtu.be/WadvxBOIx7s" target="_blank" class="youtube" lang="en">
+                                        <span>Watch on YouTube</span>
+                                    </a>
+                                    <a href="https://youtu.be/%5F_bVCaLy-g8" target="_blank" class="youtube" lang="mi">
+                                        <span>Mātakitaki mā Tiri Ata</span>
+                                    </a>
+
+                                    <a href="20180703_222016Z/pdf/OatTheGoat.pdf" target="_blank" class="pdf" lang="en">
+                                        <span>Download as PDF</span>
+                                    </a>
+                                    <a href="20180703_222016Z/pdf/OtiTeNanekoti.pdf" target="_blank" class="pdf"
+                                        lang="mi">
+                                        <span>Tīkina atu te PDF</span>
+                                    </a>
+                                </div>
+                            </section>
+
+                            <section class="nav-page" id="nav-support">
+                                <h1>
+                                    <span lang="en">Info for Parents</span>
+                                    <span lang="mi">Mā ngā mātua | Rārangi kupu</span>
+                                </h1>
+
+                                <section class="support-content">
+                                    <div class="scroller-container">
+                                        <div lang="en">
+                                            <p>Hi there, we really hope you and your child enjoyed reading Oat the Goat.
+                                            </p>
+                                            <p>We wrote this story because while children learn to get along with each
+                                                other from a really young age, sometimes they need a little guidance
+                                                from you. And Oat the Goat’s a fun way for you and your child to spend
+                                                time together learning about the power of kindness.</p>
+                                            <p>Kindness is the exact opposite of bullying. Being bullied is awful,
+                                                especially for kids, so it’s important you know what it is so you can
+                                                look out for it. Bullying is unwanted and repeated behaviour by someone
+                                                who uses their power to hurt another person (or people) on purpose. It’s
+                                                a pretty stink situation.</p>
+                                            <p>Young children’s bullying often looks different from older kids’. Young
+                                                kids experiment with different ways of behaving and sometimes this can
+                                                look like bullying. They could say mean things, grab stuff, pull a funny
+                                                face, push people or refuse to play with someone. While upsetting, this
+                                                isn’t really bullying because it isn’t done on purpose to keep hurting
+                                                another child. But, if they’re allowed to keep going, it could turn into
+                                                a pattern of bullying.</p>
+                                            <p>The good news is that it’s easier to stop your child doing all that yucky
+                                                stuff when they’re young. Young children usually change their behaviour
+                                                depending on how their friends, parents, whānau, or teachers react. So
+                                                now’s the time to help them learn how to be kind.</p>
+                                            <p>Reading Oat the Goat will help you talk to your child about making
+                                                choices – should they laugh at someone? Ignore them? Stand up to them?
+                                                Or include and be kind to them?</p>
+                                            <p>Oat the Goat shows that being kind always wins in the end. And that’s
+                                                what we all want right?</p>
+                                            <p>Here’s some more tips to help you teach your child how to get on with
+                                                people and talk about their feelings.</p>
+                                            <ul>
+                                                <li>Talk to your child about things <em>other</em> people do and how
+                                                    <em>they</em> might feel.</li>
+                                                <li>Talk about and practise taking turns, sharing, helping, and looking
+                                                    after others to build positive behaviour.</li>
+                                                <li>Praise your child when you notice them making an effort to get on
+                                                    with other children. Help boost their kind behaviour with heaps of
+                                                    positive words. Eg. “Sharing the toy was very kind of you, Matu.
+                                                    Nice one.”</li>
+                                                <li>Being kind feels good! Recognise how it makes your child feel, e.g.
+                                                    “I can see it made you happy to let Pania join in.”</li>
+                                                <li>Chat about how their own experiences are like the characters in Oat
+                                                    the Goat. When children read stories that reflect the diverse world
+                                                    that they live in, they’re less likely to bully those who are
+                                                    different from them. Ask questions like: “Have you ever felt like
+                                                    little green glow worm? Or the sheep? How did it make you feel? What
+                                                    did you do? And what do you think you could do differently next
+                                                    time?” This can help young children practise what they might do in a
+                                                    real-life situation.</li>
+                                                <li>Point out the positive behaviour in Oat the Goat, as well as the bad
+                                                    behaviour, and relate that to your life. For instance, can your
+                                                    child think of a time when they included someone in a game, just
+                                                    like when Oat the Goat was kind and said “Come hang with us, little
+                                                    worm.”</li>
+                                                <li>Talk about how everyone is different and how that’s great, since our
+                                                    differences make us special. Your child will get on with other kids
+                                                    better when they understand, appreciate and respect them.</li>
+                                                <li>Be a positive role model of what you would like your child to do.
+                                                </li>
+                                                <li>Read the book over and over again. Learning new things takes time
+                                                    and lots of practice so try to share at least one story book moment
+                                                    with your child every day.</li>
+                                            </ul>
+                                            <h2>More Information</h2>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/tackling-bullying-a-guide-for-parents-and-whanau/where-can-i-get-more-information-and-help/"
+                                                    target="_blank">What to do if you need more support and want to talk
+                                                    to someone about bullying</a></p>
+                                            <p>If your child is experiencing bullying behaviour at school, contact your
+                                                school about it.</p>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/tackling-bullying-a-guide-for-parents-and-whanau/what-can-the-school-do/"
+                                                    target="_blank">Tips about how to talk to your school</a></p>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/tackling-bullying-a-guide-for-parents-and-whanau/starting-early/"
+                                                    target="_blank">Bullying Free NZ website</a></p>
+                                            <p><a href="https://www.bullyingfree.nz/schools/activities-and-events/oat-the-goat"
+                                                    target="_blank">For more fun activities</a></p>
+                                            <p><a href="http://www.bullyingfree.nz/parents-and-whanau/oat-the-goat/faqs"
+                                                    target="_blank">Frequently asked questions</a></p>
+                                        </div>
+                                        <div lang="mi">
+                                            <p>Tēnā koe. Ko te tūmanako i pārekareka tā kōrua ko tāu tamaiti pānui i te
+                                                pūrākau o Oti te Nanekoti.</p>
+                                            <p>Ka ako te tamaiti ki ngā tikanga o te whakawhanaungatanga i a rātou e
+                                                kōhungahunga ana, heoi me āta ārahi tonu rātou i ētahi wā. Koirā te
+                                                kaupapa o Oti te Nanekoti, he whakakotahi i a kōrua ko tāu tamaiti ki te
+                                                ako mō te aroha ki te tangata.</p>
+                                            <p>Ko te ngākau māhaki te tauaro o te whakaweti tangata. He āhuatanga
+                                                weriweri te whakaweti tangata, mātua hoki mō te hunga tamariki, nō reira
+                                                me mōhio koe ki ngā tohu. He mahi whakatohetohe te whakaweti tangata, ka
+                                                rite tonu te kitea i te tangata ka whai ki te pēhi i te mana o tētahi
+                                                atu. He āhuatanga maninohea.</p>
+                                            <p>He rerekē te āhua o te whakaweti a te kōhungahunga i ō te taiohi. Ko tā
+                                                te kōhungahunga he wheako, nā reira tērā ngā whanonga hē ka
+                                                whakamātauria e te tamaiti ka pōhēhētia pea he mahi whakaweti: Ko te
+                                                kōrero hahani, te kapo taputapu, te whakatoi, te peipei tangata, te
+                                                whakatuturi rānei i ngā mahi tākaro. Ahakoa te pāmamae ka pā pea ki ngā
+                                                hoa tākaro, kāhore ēnei whanonga i pū ake i te hiahia o te tamaiti ki te
+                                                whakamamae i tētahi atu, heoi ki te tukuna noatia kia tipu i roto i a
+                                                ia, ko te whakaweti tangata pea te hua.</p>
+                                            <p>Ko te mea nui ka taea ēnei whanonga te haukoti i te wā e kōhungahunga
+                                                tonu ana te tamaiti. Ka whanake ngā whanonga o te tamaiti i runga anō i
+                                                ngā uruparenga a ōna hoa, mātua, whānaunga, kaiako anō hoki. Nō reira
+                                                koinei te wā pai ki te whakatō atu i ngā uaratanga o te ngākau māhaki me
+                                                te aroha ki roto i a rātou.</p>
+                                            <p>Mā te pānui i te pūrākau o Oti te Nanekoti e āwhina ai kōrua ko tāu
+                                                tamaiti ki te whiriwhiri ara – mēnā me kata, me whakatuturi, me tū
+                                                whakahē atu, me whakararata rānei.</p>
+                                            <p>Ko te whāinga o Oti te Nanekoti ko te whakamārama i te hua o te aroha ki
+                                                te tangata. Koinā te tino wawata, nē?</p>
+                                            <p>Anei ētahi tohutohu hei āwhina i a koe ki te whakaako i tāu tamaiti me
+                                                pēhea te whakararata tangata, me pēhea hoki te kōrero i ōu kare ā-roto.
+                                            </p>
+                                            <ul>
+                                                <li>Me kōrero kōrua ko tāu tamaiti e pā ana ki ngā mahi a tētahi atu, ā,
+                                                    he aha anō ngā whakaaro mō taua mahi rā.</li>
+                                                <li>Me wānanga, me whakatauira atu anō hoki i te manaaki tangata, i te
+                                                    whakahoahoa, i te āwhina a tētahi i tētahi ki ngā tamariki.</li>
+                                                <li>Me whakawhētai i te tamaiti ki te āwhina rātou i ētahi atu.
+                                                    Taunakitia taua ākinga rā ki te mihi tautoko, “Kātahi ko te tamaiti
+                                                    ngākau māhaki ko koe, e Matu, he kaha nōu ki te whakahoahoa i āu
+                                                    taonga tākaro.”</li>
+                                                <li>He hua pai te ngākau māhaki! Whakanuia tēnei karenga ā-roto, hei
+                                                    tauira, “I kite au i tō koa i te piringa mai o Pānia.”</li>
+                                                <li>Kōrerotia ngā wheako a ngā tamariki ānō nei he wheakoranga nā te
+                                                    hunga o roto tonu i te pūrākau o Oti te Nanekoti. Ki te pānui rātou
+                                                    mō tētahi ao he rite nei ētahi o ōna āhuatanga ki ō ētahi nō tōna
+                                                    ake ao, ka uaua ake tana toro ki ngā mahi whakaweti i te hunga
+                                                    rerekē. Me pēnei tō ui i a rātou, “Kua pēnā tō mokemoke ki tō Hana
+                                                    Motuhake mokemoke? Pēhea a hipi? I pēhea rānei ō whakaaro i tēna? I
+                                                    aha koe i muri atu? Me aha ki te pā mai anō tēnā tūāhuatanga?” Mā
+                                                    konei e whai wāhi ai ngā tamariki ki te wānanga i ngā ara hei
+                                                    whiriwhiri māna.</li>
+                                                <li>Me tohu, me whakanui anō hoki ngā whanonga tika i roto i Oti te
+                                                    Nanekoti. Me tohu anō hoki ngā whanonga hē, kātahi ka kimi i ngā
+                                                    ritenga i roto i te ao o te tamaiti. Hei tauira pea, me whakahoki
+                                                    ngā whakaaro o tāu tamaiti ki tētahi wā i pōhiri atu ai ia ki tētahi
+                                                    atu tamaiti, pērā i tā Oti pōhiri ki a Hana Motuhake, “Me haere mai
+                                                    hoki koe.”</li>
+                                                <li>Me kōrero mō te rerekē o ia tangata me te whakahirahira o tēnā
+                                                    āhuatanga, inā hoki mā reira tātou e kīia ai he tangata motuhake. Mō
+                                                    tāu tamaiti, ka māmā ake tōna whakararata i te tangata mēnā kei te
+                                                    aro ia ki ngā āhuatanga o taua tangata i roto i te ngākau māhaki.
+                                                </li>
+                                                <li>Māu anō ēnei uaratanga, ēnei whanonga anō hoki e whakatauira atu ki
+                                                    tāu tamaiti.</li>
+                                                <li>Me hokihoki tonu ki te pānui i te pūrākau. Mā te tōai, te
+                                                    parakatihi, te whakatinana e tangata whenua ai ngā akoranga, nō
+                                                    reira me ruku kōrua ko tāu tamaiti kia kotahi te pūrākau ia rā.</li>
+                                            </ul>
+                                            <h2>Hei āpititanga</h2>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/tackling-bullying-a-guide-for-parents-and-whanau/where-can-i-get-more-information-and-help/"
+                                                    target="_blank">Me aha ki te hiahia āwhina anō koe, ā, kei te hiahia
+                                                    hoki koe ki te kōrero ki tētahi atu mō te mahi whakaweti</a></p>
+                                            <p>Mēnā kei te whakawetingia tāu tamaiti ki te kura, whakapā atu ki te kura.
+                                            </p>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/tackling-bullying-a-guide-for-parents-and-whanau/what-can-the-school-do/"
+                                                    target="_blank">He tohutohu e pā ana ki te kōrero ki ngā mana
+                                                    whakahaere o te kura</a></p>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/tackling-bullying-a-guide-for-parents-and-whanau/starting-early/"
+                                                    target="_blank">Te whārangi paetukutuku o ‘Bullying Free NZ’</a></p>
+
+                                            <h2>Rārangi kupu</h2>
+                                            <p><a href="https://www.bullyingfree.nz/parents-and-whanau/oat-the-goat/glossary"
+                                                    target="_blank">www.bullyingfree.nz/parents-and-whanau/oat-the-goat/glossary</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+
+                        <ol class="nav-choices">
+                            <li><a href="#nav-chapters" class="page-link selected">
+                                    <span lang="en">Browse<br>Chapters</span>
+                                    <span lang="mi">Ngā<br>upoko</span>
+                                </a></li>
+                            <li><a href="#nav-options" class="page-link">
+                                    <span lang="en">Reading<br>Options</span>
+                                    <span lang="mi">Kōwhiringa<br>reo</span>
+                                </a></li>
+                            <li><a href="#nav-support" class="page-link">
+                                    <span lang="en">Info for<br>Parents</span>
+                                    <span lang="mi">Mā ngā mātua /<br>Rārangi kupu</span>
+                                </a></li>
+
+                            <li class="socials">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={URL}&amp;t={TEXT}" class="fb"
+                                    target="_blank">Facebook</a>
+                                <a href="https://twitter.com/intent/tweet?text={TEXT}&amp;url={URL}&amp;hashtags={HASHTAGS}"
+                                    class="twt" target="_blank">Twitter</a>
+                                <a href="mailto:?Subject={TITLE}&amp;Body={TEXT}%0a%0a{URL}" class="mail"
+                                    target="_blank">Email</a>
+                            </li>
+                        </ol>
+                    </div>
+                </nav>
+
+                <div id="pre-story" class="lang-select">
+
+                    <div id="lang-select">
+                        <p class="prompt">
+                            <!-- <span lang="en">Select your language</span> -->
+                            <span lang="en">Bienvenido a los Relatos sonoros.</span> <br>
+                            <span lang="mi">Da click en Comenzar para continuar</span>
+                        </p>
+                        <hr class="build">
+                        <ul>
+                            <li><button data-lang="en">Comenzar</button></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div id="interstitial-loader">
+                    <div class="gif"></div>
+                    <p>
+                        <span lang="en">Loading</span>
+                        <span lang="mi">E rarau ana</span>
+                    </p>
+
+                    <p class="sound-prompt">
+                        <span lang="en">Please turn up your sound.</span>
+                        <span lang="mi">Whakakahangia te oro.</span>
+                    </p>
+
+                    <div class="progress">
+                        <div class="progress-inner">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div id="title">
+                    <div lang="en">
+                        <span lang="en">Oat</span>
+                        <span lang="en">the</span>
+                        <span lang="en">Goat</span>
+                    </div>
+                    <div lang="mi">
+                        <span lang="mi">Oti</span>
+                        <span lang="mi">te</span>
+                        <span lang="mi">Nanekoti</span>
+                    </div>
+                </div>
+
+                <div id="post-story">
+                    <div class="vertical-wrapper">
+                        <section class="build">
+                            <p lang="en">You've reached the tippity top.</p>
+                            <p lang="mi">Kei te tihi o te maunga koe.</p>
+                        </section>
+
+                        <hr class="build">
+
+                        <section class="build">
+                            <p><button class="restart">
+                                    <span lang="en">Do it again</span>
+                                    <span lang="mi">Me tīmata anō</span>
+                                </button></p>
+                        </section>
+                    </div>
+
+                    <section class="links">
+                        <div class=" left">
+                            <a href="https://www.education.govt.nz/" class="moe-link" target="_blank">
+                                <span>Ministry of Education / Te Tāhuhu O Te Mātauranga</span>
+                            </a>
+                        </div>
+
+
+                        <div class="right">
+                            <div class="socials">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u={URL}&amp;t={TEXT}" class="fb"
+                                    target="_blank">Facebook</a>
+                                <a href="https://twitter.com/intent/tweet?text={TEXT}&amp;url={URL}&amp;hashtags={HASHTAGS}"
+                                    class="twt" target="_blank">Twitter</a>
+                                <a href="mailto:?Subject={TITLE}&amp;Body={TEXT}%0a%0a{URL}" class="mail"
+                                    target="_blank">Email</a>
+                            </div>
+
+                            <span class="sep">&nbsp;|&nbsp;</span>
+
+                            <a href="#whanau-info" class="whanau-link">
+                                <span lang="en">Info for Parents</span>
+                                <span lang="mi">Mā ngā mātua | Rārangi kupu</span>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- <div id="blackout"></div> -->
+
+                <canvas id="main" width="2070" height="1344" style="width: 1380px; height: 896px;"></canvas>
+            </div>
         </div>
     </main>
 </body>
+
 </html>
