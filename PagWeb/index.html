@@ -7,41 +7,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relato Sonoro</title>
 
+    <!-- css estructure -->
     <link rel="stylesheet" href="/css/Structure.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT">
+    <!-- css video -->
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <main>
-        <div class="fe"></div>
         <section>
-            <div class="cont-title">
-                <div class="title">
-                    <h1>Multitud Errante</h1>
-                </div>
-        
-                <div id="lang-select">
-                    <p class="prompt">
-                        <!-- <span lang="en">Select your language</span> -->
-                        <span lang="en">Bienvenido a la Multitud Errante.</span> <br>
-                        <span lang="mi">Da click en Comenzar para continuar</span>
-                    </p>
-                    <hr class="build">
-                    <ul>
-                        <li>
-                            <button data-lang="en">
-                                <a href="/web/inicio.html">Comenzar</a>
-                            </button>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <!-- Redes Sociales -->
+                        <div class="red">
+                            <div id="facebook" class="social-red">
+                                <a href="" target="none" class="fa fa-facebook">
+                                    <i class='bx bx-red-social bxl-facebook-square'></i>
+                                </a>
+                            </div>
+
+                            <div id="whatsapp" class="social-red">
+                                <a href="#" class="fa fa-whatsapp">
+                                    <i class='bx bx-red-social bxl-whatsapp'></i>
+                                </a>
+                            </div>
+
+                            <div id="instagram" class="social-red">
+                                <a href="#" class="fa fa-instagram">
+                                    <i class='bx bx-red-social bxl-instagram'></i>
+                                </a>
+                            </div>                           
+                        </div>
+                        <!-- Nav -->
+                        <header>
+                            <div id="sidebar">
+                                <div class="toggle-btn bars__menu">
+                                    <span class="line1__bars-menu"></span>
+                                    <span class="line2__bars-menu"></span>
+                                    <span class="line3__bars-menu"></span>
+                                </div>
+
+                                <div class="subtile">
+                                    <p>Multitud Herrante</p>
+
+                                    <div class="line-title"></div>
+                                </div>
+
+                                <ul class="">
+                                    <li class="list--item">Creadores
+                                        <ul class="list__show">
+                                            <li class="list__inside">Brian Leon Hoyos</li>
+                                            <li class="list__inside">Juan Jos&eacute; Borrero G.</li>
+                                            <li class="list__inside">Juan Daniel Cano A.</li>
+                                            <li class="list__inside">Esteban Barrera Gonzales.</li>
+                                            <li class="list__inside">Cristian Camilo Zuluaga R.</li>
+                                        </ul>
+                                    </li>
+                                    
+                                    <li class="list--item">Instituci&oacute;n
+                                        <ul class="list__show">
+                                            <li class="list__inside">Autonoma de Occidente</li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="list--item">Creditos
+                                        <ul class="list__show">
+                                            <li class="list__inside">Juan Vicente.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </header>
+                    </div>
                 </div>
             </div>
         </section>
-      
     </main>
-    <!-- Parte de los Js -->
-    <script src="js/three.min.js"></script>
-    <script src="js/panolens.min.js"></script>
+    <!-- Js -->
+    <script src="/js/nav.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+    <!-- video -->
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+    <!-- icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>

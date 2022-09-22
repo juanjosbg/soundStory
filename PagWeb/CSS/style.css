@@ -1,74 +1,185 @@
-body{
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/textured_paper.png');
-    position: relative;
+body {
+    background: #EAEBEF;
 }
 
-.cont-title {
-    width: 70%;
-    height: 400px;
-    padding: 15vh 10vh 0 10vh;
-    top: 50%;
-    left: 50%;
+/* === Nav ==== */
+#sidebar {
     position: fixed;
-    background-color: #fea;
-    transform: translate(-50%, -50%);
-    box-shadow: var(--box1);
-    border-radius: 15px;
+    width: 300px;
+    height: 100%;
+    background: url('/images/textured_paper.png');
+    left: -320px;
+    transition: all 500ms linear;
 }
 
-.title {
+.line-title {
+    width: 80%;
+    border-bottom: 2px solid #fff;
+    opacity: .4;
+    display: block;
+    margin: auto;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    list-style: none;
+    text-align: left;
+    padding-left: 4vh;
+    padding-top: 1vh;
+    font-family: 'Roboto' !important;
+}
+
+/* Title in nav menu */
+.subtile {
+    padding: 30px 10px;
     text-align: center;
-    margin-bottom: 4vh;
 }
 
-#lang-select {
-    
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
+.subtile p {
+    color: #fff;
+    font-family: 'Quicksand';
+    letter-spacing: 1px;
+    font-size: 1.4rem;
 }
 
-#lang-select p,
-#pre-story.lang-select #lang-select li,
-#pre-story.lang-select #lang-select hr {
-    height: auto;
-    opacity: 1;
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-}
-.prompt{
-    text-align: center;
-    padding: 15px;
-}
-.prompt span{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/* Barra menu */
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 24rem;
+    top: 3rem;
+    cursor: pointer;
+
 }
 
-/* hr */
-.build {
-    background: url('/images/start-screen-line.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-top: 0.75757576%;
-    border: none;
-    height: 0;
-    color: transparent;
+.bars__menu {
+    width: 30px;
+    height: 20px;
+    transform: translate(-50%, -60%) scale(3);
+    cursor: pointer;
+}
+
+.bars__menu span {
+    display: block;
     width: 50%;
-    display: block;
-    margin: 5vh auto;
-    margin-left: -3.2vh;
+    height: 2px;
+    background: var(--Gris1);
+    margin-top: 2px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.activeline1__bars-menu {
+    transform: rotate(45deg) translate(-1px, 3px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+/*  */
+.list--item {
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 5vh;
+    font-size: 20px;
+}
+
+.list__show {
+    color: #fff;
+    letter-spacing: 1px;
+    margin-left: -14px;
+    padding: 5px 0;
+    margin-bottom: 1vh;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 3.5vh;
+}
+
+
+/* icons menu */
+.bx-icon {
+    font-size: 20px;
+    position: relative;
+    top: .4vh;
+}
+
+/* ========================================== */
+/* Redes Sociales */
+
+.red {
+    position: fixed;
+    top: 400px;
+    z-index: 100;
+    right: 0;
+}
+
+.social-red {
+    margin-bottom: 2.5vh;
+    width: 55px;
+}
+
+#facebook a {
+    background: linear-gradient(349deg, rgba(20, 39, 155, 1) 0%, rgba(61, 86, 178, 1) 55%);
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+#whatsapp a {
+    background: linear-gradient(32deg, rgba(28, 103, 88, 1) 0%, rgba(61, 131, 97, 1) 55%);
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+#instagram a {
+    background: linear-gradient(252deg, rgba(253, 132, 31, 1) 0%, rgba(232, 91, 39, 1) 41%, rgba(214, 42, 64, 1) 66%, rgba(156, 44, 119, 1) 100%);
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+#facebook a:hover {
+    background: linear-gradient(196deg, rgba(20, 39, 155, 1) 0%, rgba(61, 86, 178, 1) 55%);
+}
+
+#whatsapp a:hover {
+    background: linear-gradient(225deg, rgba(28, 103, 88, 1) 0%, rgba(61, 131, 97, 1) 55%);
+}
+
+#instagram a:hover {
+    background: linear-gradient(63deg, rgba(253, 132, 31, 1) 0%, rgba(232, 91, 39, 1) 41%, rgba(214, 42, 64, 1) 66%, rgba(156, 44, 119, 1) 100%);
+}
+
+
+#facebook a:hover,
+#whatsapp a:hover,
+#instagram a:hover {
+    width: 100%;
+    padding: 10px 25px;
+    transition: all .4s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    right: 15px;
+    margin-bottom: 6vh;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.bx-red-social{
+    font-size: 20px;
     display: block;
     margin: auto;
 }
-
-/* Btn */
-button{
-    display: block;
-    margin: auto;
-    padding-top: 3vh;
-}
-
-/* ========================================================== */
-/* @media */
-@media (min-width: 1350px) {}
