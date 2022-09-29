@@ -50,6 +50,8 @@ window.onload = function() {
         var lastVideoContainer = videosContainer.getElementsByClassName("active")[0];
         lastVideoContainer.classList.remove("active");
         lastVideoContainer.style.display = "none";
+        let videoExecution = lastVideoContainer.querySelector('.custom-video');
+        videoExecution.pause();
 
         videoContainer.style.display = "block";
         videoContainer.classList.add("active");
