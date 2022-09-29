@@ -1,8 +1,13 @@
 body {
-    background: #EAEBEF;
+    background: #000000 !important
 }
 
 /* === Nav ==== */
+header {
+    position: fixed;
+    z-index: 100;
+}
+
 #sidebar {
     position: fixed;
     width: 300px;
@@ -114,7 +119,6 @@ body {
 
 /* ========================================== */
 /* Redes Sociales */
-
 .red {
     position: fixed;
     top: 400px;
@@ -178,8 +182,179 @@ body {
     border-radius: 5px;
 }
 
-.bx-red-social{
+.bx-red-social {
     font-size: 20px;
     display: block;
     margin: auto;
+}
+
+/* ========================== */
+/* Video */
+
+.my-video-dimensions {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    margin-top: 12vh;
+}
+.vjs-poster{
+    background-image: url('/images/ChùGa.jpg') !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.video-js .vjs-tech{
+    left: -85px !important;
+    width: auto !important;
+    height: auto !important;
+    top: 0;
+}
+
+.video-js .vjs-control-bar{
+    width: 80rem !important;
+    left: -82px !important;
+    bottom: -20.6vh !important;
+}
+
+.video-js .vjs-picture-in-picture-control{
+    display: none;
+}
+
+@media (min-width: 1400px) {
+    .video-js .vjs-control-bar {
+        width: 89rem !important;
+        left: -78px !important;
+        bottom: -7.6vh !important;
+    }
+}
+
+/* ====================== */
+/* Btn */
+.btnNext {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 60px;
+    height: 50px;
+    top: -18vh;
+    right: 6vh;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    color: #e5e5e5;
+    font-weight: 600;
+    
+    font-size: 32px; 
+    background: var(--Gris1);
+}
+
+
+/* ====== */
+/* parte de video selections */
+
+.hide {
+    display: none;
+}
+
+.initial {
+    display: block;
+}
+
+.letter h3{
+    letter-spacing: 1px;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+.line {
+    border-bottom: 1.5px solid #fefefe;
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+}
+.videos {
+    position: relative;
+    max-width: 700px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.videos video {
+    max-width: 100%;
+    height: auto;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    padding: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.play:hover .fil1 {
+    fill: #fff;
+}
+
+.menu {
+    height: 98%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu,
+.menu-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -51%);
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu,
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover {
+    cursor: pointer;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.options li{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-transform: initial;
+}
+@media only screen and (min-width: 768px) {
+    .menu ul li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .show-below-450 {
+        display: block !important;
+        color: red;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
