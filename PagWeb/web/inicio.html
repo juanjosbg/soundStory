@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="https://assets.nflxext.com/web/ffe/wp/less/core/error-page.b4d75d715f60a9ee1887.css">
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Video -->
-    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
-
 </head>
 
 <body>
@@ -64,56 +61,31 @@
         <!-- Video -->
         <div class="videos">
             <div class="active initial closing">
-                <video class="video-js vjs-big-play-centered video-selector" 
-                    controls preload="auto" data-setup="{}"
-                    width="640"
-                    height="264">
+                <video class="custom-video video-js vjs-big-play-centered video-selector" data-setup="{}" preload="auto" controls>
                     <source src="/videos/Gon's Rock, Paper, Scissors..mp4" type="video/mp4">
                 </video>
             </div>
 
             <div class="cat hide">
-                <video lass="video-js vjs-big-play-centered video-selector" data-setup="{}" preload="auto" controls
-                    loop>
+                <video class="custom-video" data-setup="{}" preload="auto" controls>
                     <source src="/videos/Gon2.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <div class="cat hide">
-                <video>
-                    <source src="" type="video/mp4">
-                </video>
-            </div>
-
             <div class="dog hide">
-                <video lass="video-js vjs-big-play-centered video-selector" data-setup="{}" preload="auto" controls
-                    loop>
+                <video class="custom-video" data-setup="{}" preload="auto" controls>
                     <source src="/videos/Vid-2.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <div class="dog hide">
-                <video>
-                    <source src="" type="video/mp4">
-                </video>
-            </div>
-
             <div class="fis hide">
-                <video lass="video-js vjs-big-play-centered video-selector" data-setup="{}" preload="auto" controls
-                    loop>
+                <video class="custom-video" data-setup="{}" preload="auto" controls>
                     <source src="/videos/Vid-1.mp4" type="video/mp4">
                 </video>
             </div>
 
-            <div class="fis hide">
-                <video>
-                    <source src="" type="video/mp4">
-                </video>
-            </div>
-
             <div class="play">
-                <?xml version='1.0' encoding='utf-8'?>
-                <svg xmlns="http://www.w3.org/2000/svg" width="91.44mm"
+                <?xml version='1.0' encoding='utf-8'?><svg xmlns="http://www.w3.org/2000/svg" width="91.44mm"
                     height="91.44mm" version="1.1"
                     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                     viewBox="0 0 9144 9144">
@@ -174,8 +146,6 @@
     <script src="/js/videoPreload.js"></script>
     <!-- icons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <!-- Video -->
-    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 </body>
 
 </html>
