@@ -15,6 +15,8 @@ function inicio() {
 
     document.querySelector(".play").onclick = play;
     document.querySelector(".volumen").onclick = volumen;
+
+    reordenar();
 }
 
 // play - Pause
@@ -28,9 +30,26 @@ function play() {
     }
 }
 
-// volumen - muted
+// volumen - muted  
 function volumen() {
-    vid.volumen = !videos.volumen;
+    vid.volumen = !vid.volumen;
     this.src = `/images/Volumen${vid.volumen}.png`;
 
+}
+
+// Reordenar
+function reordenar() {
+    for (v of videos) {
+        do {
+            var azar = Math.floor(Math.random() * videos.length);
+        } while (orden.indexOf(azar) >= 0)
+        orden.push(azar);
+    }
+    reproducir();
+}
+
+function reproducir(){
+    console.log(orden);
+
+    let videoToca = orden[videoActual];
 }
