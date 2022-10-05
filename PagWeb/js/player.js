@@ -50,6 +50,6 @@ function reordenar() {
 
 function reproducir(){
     console.log(orden);
-
+    orden=[]
     let videoToca = orden[videoActual];
 }
