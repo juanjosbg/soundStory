@@ -13,6 +13,27 @@ a {
     color: #fff !important;
 }
 
+#play-icon {
+    position: absolute;
+    top: 0px;
+    width: 8rem;
+    height: 8rem;
+}
+
+#play-volume {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 8rem;
+    height: 8rem;
+}
+#btn-show {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+
 /* ========================================== */
 /*Modal */
 #modal {

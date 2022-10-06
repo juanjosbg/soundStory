@@ -6,17 +6,35 @@ var videos = ["ESCENA 1.mp4", "ESCENA 2.mp4",
 var vid;
 var videoActual = 1;
 
+document.getElementById("video-manager").muted = true;
+
+
+setTimeout(funToShow, 5000);
+
+function funToShow() {
+    // TODO: 
+    document.getElementById("btn-show").style.visibility = "visible";
+
+    console.log("aparece!");
+}
+
+
 // para arreglar el orden de los videos 
 var orden = [];
 
 function inicio() {
     vid = document.querySelector("video");
     vid.src = `/videos/${videos[videoActual]}`;
-
-    document.querySelector(".play").onclick = play;
+    //document.querySelector(".play").onclick = play;
     document.querySelector(".volumen").onclick = volumen;
 
+    document.getElementById("video-manager").autoPlay = true;
+
     reordenar();
+}
+
+function unMuted() {
+    document.getElementById("video-manager").muted = false;
 }
 
 // play - Pause
@@ -48,8 +66,10 @@ function reordenar() {
     reproducir();
 }
 
-function reproducir(){
+function reproducir() {
     console.log(orden);
-    orden=[]
+
     let videoToca = orden[videoActual];
 }
+
+document.getElementById("play-volume").addEventListener("click", unMuted);
