@@ -16,6 +16,11 @@ a {
 
 /* ========================================== */
 /*Modal */
+.icon-modal {
+    z-index: 100 !important;
+    position: absolute;
+    width: 100%;
+}
 #modal {
     display: flex;
     justify-content: left;
@@ -24,9 +29,10 @@ a {
 }
 
 .modal {
+    width: 90%;
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 1vh;
+    left: 10vh;
     background: rgba(0, 0, 0, 0.5);
     transition: all 500ms ease;
     opacity: 0;
