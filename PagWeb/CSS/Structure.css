@@ -17,12 +17,6 @@ body {
     padding: 0;
 }
 
-body {
-    min-height: 321px;
-    position: relative;
-    overflow: hidden;
-}
-
 /* ===================================== */
 /* Colores y elementos a usar */
 
