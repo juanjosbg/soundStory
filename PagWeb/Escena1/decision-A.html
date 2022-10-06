@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css estructure -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!--  Modal-->
+                    <div class="icon-modal">
+                        <input type="checkbox" id="btn-modal">
+                    <label for="btn-modal" class="lbl-modal">
+                        <i class='col-icon bx bx-info-circle'></i>
+                    </label>
+
+                    <div id="modal" class="modal">
+                        <div class="contenedor">
+                            <header>
+                                <div class="subtile">
+                                    <p>Multitud Herrante</p>
+                                    <div class="line-title"></div>
+                                </div>
+                            </header>
+                            <label for="btn-modal">X</label>
+                            <div class="contenido">
+                                <div class="informacion-conted">
+                                    <div class="info1">
+                                        <h4>Creadores:</h4>
+                                        <ul class="list__show">
+                                            <li class="list__inside">Brian Leon Hoyos</li>
+                                            <li class="list__inside">Juan Jos&eacute; Borrero G.</li>
+                                            <li class="list__inside">Juan Daniel Cano A.</li>
+                                            <li class="list__inside">Esteban Barrera Gonzales.</li>
+                                            <li class="list__inside">Cristian Camilo Zuluaga R.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="info2">
+                                        <a href="https://www.comisiondelaverdad.co/hay-futuro-si-hay-verdad" class="info-a">Más información</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Redes Sociales -->
+                    <div class="red">
+                        <div id="facebook" class="social-red">
+                            <a href="http://www.facebook.com/sharer.php?u=https://proyect-soundstory.surge.sh/"
+                                target="_blank" class="fa fa-facebook">
+                                <i class='bx bx-red-social bxl-facebook-square'></i>
+                            </a>
+                        </div>
+
+                        <div id="whatsapp" class="social-red">
+                            <a href="http://api.whatsapp.com/send?text=https://proyect-soundstory.surge.sh/" target="_blank"
+                                class="fa fa-whatsapp">
+                                <i class='bx bx-red-social bxl-whatsapp'></i>
+                            </a>
+                        </div>
+
+                        <div id="instagram" class="social-red">
+                            <a href="https://www.instagram.com/p/CjBKLMNon8T/?RelatoSonoro" target="_blank"
+                                class="fa fa-instagram">
+                                <i class='bx bx-red-social bxl-instagram'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Video -->
+                    <div class="videos">
+                        <div class="active initial closing">
+                            <video class="custom-video video-js vjs-big-play-centered video-selector" autoplay
+                                preload="auto" controls>
+                                <source src="/videos/ESCENA 1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="cat hide">
+                            <video class="custom-video" data-setup="{}" preload="auto" controls>
+                                <source src="/videos/ESCENA 2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="dog hide">
+                            <video class="custom-video" data-setup="{}" preload="auto" controls>
+                                <source src="/videos/ESCENA 4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="fis hide">
+                            <video class="custom-video" data-setup="{}" preload="auto" controls>
+                                <source src="/videos/ESCENA 4.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="play">
+                            <?xml version='1.0' encoding='utf-8'?>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="91.44mm" height="91.44mm" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 9144 9144">
+                                <defs>
+                                    <style type="text/css">
+                                        .fil0 {
+                                            fill: #fff
+                                        }
+
+                                        .fil1 {
+                                            fill: #ccc;
+                                            fill-rule: nonzero
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer" />
+                                    <g id="_2744492901664">
+                                        <g>
+                                            <path class="fil1"
+                                                d="M6601 4572c0,-560 -227,-1067 -594,-1435 -368,-367 -875,-594 -1435,-594 -560,0 -1067,227 -1435,594 -367,368 -594,875 -594,1435 0,560 227,1067 594,1435 368,367 875,594 1435,594 560,0 1067,-227 1435,-594 367,-368 594,-875 594,-1435zm-2513 791l1231 -791 -1231 -792 0 1583zm1442 -717l-1478 949c-14,11 -32,17 -52,17 -49,0 -88,-39 -88,-88l0 -1905 0 0c0,-16 4,-33 14,-48 26,-40 81,-52 122,-26l1480 952 2 149zm26 -122c26,41 14,96 -26,122l26 -122zm575 -1511c399,399 646,950 646,1559 0,609 -247,1160 -646,1559 -399,399 -950,646 -1559,646 -609,0 -1160,-247 -1559,-646 -399,-399 -646,-950 -646,-1559 0,-609 247,-1160 646,-1559 399,-399 950,-646 1559,-646 609,0 1160,247 1559,646z" />
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            <!-- SVG courtesy of Pixabay: https://pixabay.com/en/play-icon-player-button-outline-2935460/ -->
+                        </div>
+
+                        <div class="menu hide">
+                            <div class="menu-wrapper">
+                                <div class="initial hide letter">
+                                    <h3>¿Que deberisa hacer la familia de campesinos?.</h1>
+                                        <div class="line"></div>
+                                </div>
+                                <div class="closing hide">
+                                    <h3>I hope you enjoyed it!</h3>
+                                    <h4>Would you like to choose a different option now?</h4>
+                                </div>
+                                <div class="options hide">
+                                    <ul>
+                                        <li><a id="cat-person">Salir del lugar</a></li>
+                                        <li><a id="dog-person">Enfrentar al criminal</a></li>
+                                        <li><a id="fis-person">Quedarse en el lugar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Icons -->
+                    <img id="play-volume" class="volumen" src="/images/Volumen1.png"
+                    alt="Btn Volumen">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Js -->
+    <script src="/js/videoPreload.js"></script>
+    <!-- icons -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>

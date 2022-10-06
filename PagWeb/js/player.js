@@ -1,40 +1,18 @@
 window.onload = inicio;
 
-var videos = ["ESCENA 1.mp4", "ESCENA 2.mp4",
-    "ESCENA 3.mp4", "ESCENA 4.mp4", "ESCENA 5.mp4"];
-
-var vid;
-var videoActual = 1;
-
-document.getElementById("video-manager").muted = true;
-
-
-setTimeout(funToShow, 5000);
-
-function funToShow() {
-    // TODO: 
-    document.getElementById("btn-show").style.visibility = "visible";
-
-    console.log("aparece!");
-}
-
-
-// para arreglar el orden de los videos 
-var orden = [];
-
 function inicio() {
-    vid = document.querySelector("video");
-    vid.src = `/videos/${videos[videoActual]}`;
-    //document.querySelector(".play").onclick = play;
     document.querySelector(".volumen").onclick = volumen;
-
-    document.getElementById("video-manager").autoPlay = true;
-
-    reordenar();
+    
+    document.getElementById("video-manager").autoPlay = false;
 }
 
 function unMuted() {
-    document.getElementById("video-manager").muted = false;
+    if(document.getElementById("video-manager").muted){
+
+        document.getElementById("video-manager").muted = false;
+    } else {
+        document.getElementById("video-manager").muted = true;
+    }
 }
 
 // play - Pause
@@ -48,28 +26,18 @@ function play() {
     }
 }
 
-// volumen - muted  
-function volumen() {
-    vid.volumen = !vid.volumen;
-    this.src = `/images/Volumen${vid.volumen}.png`;
-
-}
-
-// Reordenar
-function reordenar() {
-    for (v of videos) {
-        do {
-            var azar = Math.floor(Math.random() * videos.length);
-        } while (orden.indexOf(azar) >= 0)
-        orden.push(azar);
-    }
-    reproducir();
-}
-
-function reproducir() {
-    console.log(orden);
-
-    let videoToca = orden[videoActual];
-}
-
 document.getElementById("play-volume").addEventListener("click", unMuted);
+
+
+
+/* var videos = ["ESCENA 1.mp4", "ESCENA 2.mp4",
+    "ESCENA 3.mp4", "ESCENA 4.mp4", "ESCENA 5.mp4"]; */
+
+/* document.getElementById("video-manager").muted = true; 
+setTimeout(funToShow, 5000);
+
+function funToShow() {
+    // TODO: 
+    document.getElementById("btn-show").style.visibility = "visible";
+    console.log("aparece!");
+} */
