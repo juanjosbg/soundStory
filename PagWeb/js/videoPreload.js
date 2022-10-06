@@ -46,7 +46,7 @@ window.onload = function() {
         }, 1000);
     };
 
-    function playVideo(videoContainer, loop=false) {
+    function playVideo(videoContainer, loop=false, autoPlay=true) {
         var lastVideoContainer = videosContainer.getElementsByClassName("active")[0];
         lastVideoContainer.classList.remove("active");
         lastVideoContainer.style.display = "none";

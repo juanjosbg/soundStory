@@ -2,13 +2,11 @@ window.onload = inicio;
 
 function inicio() {
     document.querySelector(".volumen").onclick = volumen;
-    
-    document.getElementById("video-manager").autoPlay = false;
+   /*  document.getElementById("video-manager").autoPlay = true; */
 }
 
 function unMuted() {
     if(document.getElementById("video-manager").muted){
-
         document.getElementById("video-manager").muted = false;
     } else {
         document.getElementById("video-manager").muted = true;
