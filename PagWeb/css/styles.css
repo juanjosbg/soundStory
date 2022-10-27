@@ -426,13 +426,121 @@ header {
 /* @MEDIA */
 @media (min-width: 320px) {}
 
-@media (min-width: 360px) {}
+@media (min-width: 360px) {
+    .modal{
+        width: 24rem;
+        left: 1px;
+    }
+
+    .subtile p {
+        font-size: 25px;
+        margin-top: 12px;
+        margin-right: 21px;
+    }
+
+    .modal-content{
+        margin: 43% auto !important;
+        padding: 12px !important;
+        max-width: 100% !important;
+    }
+
+    .card-text{
+        font-size: 16px !important;
+    }
+
+    .informacion-conted{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .info1 h4{
+        text-align: center;
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .list__show{
+        text-align: center;
+        font-size: 18px;
+        line-height: 5vh;
+        margin-left: 0;
+    }
+
+    .info2{
+        margin-bottom: 20vh;
+        margin-top: 42px;
+    }
+
+    .info-a{
+        font-size: 28px;
+    }
+
+    .lbl-modal{
+        margin-top: 15px;
+        width: 19%;
+        height: 12.5vh;
+        margin-left: 10px;
+    }
+}
 
 @media (min-width: 411px) {}
 
 @media (min-width: 576px) {}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    .modal{
+        width: 90%;
+        left: 10vh;
+    }
+    
+    .subtile p {
+        font-family: 'Quicksand';
+        letter-spacing: 1px;
+        font-size: 3rem;
+    }
+
+    .modal-content{
+        margin: 15% auto !important;
+        padding: 20px !important;
+        max-width: 70% !important;
+    }
+    .card-text{
+        font-size: 17px !important;
+    }
+
+    .informacion-conted{
+        flex-direction: row;
+    }
+
+    .info1 h4{
+        text-align: left;
+        font-size: 40px;
+        margin-left: -14px;
+        
+    }
+
+    .list__show{
+        text-align: left;
+        font-size: 22px;
+        line-height: 6vh;
+        margin-left: -14px;
+    }
+    .info2{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .info-a{
+        font-size: 32px;
+    }
+
+    .lbl-modal{
+        margin-top: 15px;
+        width: 5.4%;
+        height: 11vh;
+        margin-left: 10px;
+    }
+}
 
 @media (min-width: 992px) {}
 
