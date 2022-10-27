@@ -45,7 +45,7 @@ body {
 }
 
 /* ul */
-ul{
+ul {
     list-style: none;
 }
 
@@ -81,8 +81,6 @@ a {
     color: #fff !important;
 }
 
-/* ==================================== */
-
 /* ========================================== */
 /*Modal */
 .icon-modal {
@@ -90,6 +88,7 @@ a {
     position: absolute;
     width: 100%;
 }
+
 #modal {
     display: flex;
     justify-content: left;
@@ -136,7 +135,7 @@ a {
     width: 100%;
     height: 15%;
     background-position: center;
-    background: url('/images/textured_paper.png');
+    background: url('/PagWeb/images/textured_paper.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -193,6 +192,14 @@ header {
     margin-top: -5px;
 }
 
+.contenido{
+    width: 100%;
+    background-size: cover;
+    background: url('/PagWeb/images/Storyboard_Escena1.1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .informacion-conted {
     display: flex;
     width: 100%;
@@ -201,7 +208,6 @@ header {
     justify-content: space-around;
     align-content: center;
     font-family: 'Quicksand';
-
 }
 
 .info1 h4 {
@@ -245,13 +251,6 @@ header {
     font-weight: 600;
     border-bottom: 2px solid #e5e5e5;
 }
-
-/* @media only screen and (min-width:320px) and (max-width:768px) {
-    .contenedor {
-        width: 15%;
-    }
-} */
-
 
 /* ========================================== */
 /* Redes Sociales */
@@ -342,8 +341,9 @@ header {
 }
 
 .videos video {
-    max-width: 100%;
-    height: auto;
+    height: 100vh;
+    width: 100%;
+    background: black;
 }
 
 .play {
@@ -368,7 +368,8 @@ header {
     background-color: rgba(0, 0, 0, 0.66);
 }
 
-.menu, .menu-wrapper {
+.menu,
+.menu-wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -382,7 +383,8 @@ header {
     line-height: 5vh;
 }
 
-.menu, .menu a {
+.menu,
+.menu a {
     color: #fff;
 }
 
@@ -412,7 +414,6 @@ header {
 
 /* ===================== */
 /* Parte de los icons */
-
 #play-volume {
     position: absolute;
     right: 0px;
@@ -420,7 +421,6 @@ header {
     width: 8rem;
     height: 8rem;
 }
-
 
 /* ==================================== */
 /* @MEDIA */
@@ -443,3 +443,145 @@ header {
 
 
 @media only screen and (max-width: 600px) {}
+
+
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    max-width: 70%;
+}
+
+.modal-content p {
+    margin-bottom: 4vh;
+    text-align: center;
+}
+.cont-modals{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+/* Part of the card */
+.card-options {
+    width: 32%;
+    height: 30vh;
+    border-radius: 4px;
+    border: none;
+}
+
+.card-options:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(2vh);
+}
+
+/* =========================== */
+/* imgs Cards */
+.card{
+    background: url('/PagWeb/images/diseños\ storyboard_Escena\ 5.1\ \(Protesta\)-20.png');
+    background-size: cover;
+}
+.card2{
+    background: url('/PagWeb/images/diseños\ storyboard_Escena\ 3.4\ \(Creacion\ CDP\).png');
+    background-size: cover;
+}
+
+.card3{
+    background: url('/PagWeb/images/diseños\ storyboard_Escena\ 4.1\ \(llegan\ armados\).png');
+    background-size: cover;
+}
+/* imgs Cards Prueba 2 */
+.card4{
+    background: url('/PagWeb/images/diseños\ storyboard_Escena\ 5.1\ \(Protesta\)-19.png');
+    background-size: cover;
+}
+
+.card5{
+    background: url('/PagWeb/images/Sce4.jpg');
+    background-size: cover;
+}
+
+/* imgs Cards Prueba 3 */
+.socialRed{
+    transform: translateX(4);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-primary{
+    padding: 8px;
+    margin-top: -15px;
+    background-color: #E38B29;
+    border: none;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+    line-height: 4vh;
+    border-radius: 2px;
+}
+/* =========================== */
+/* conts cards */
+.br-cardbod{
+    background: #262626a7;
+    backdrop-filter: blur(3x);
+    width: 100%;
+    height: 30vh;
+    border-radius: 4px;
+    position: relative;
+}
+.card-body{
+    position: relative;
+    color: #fff;
+    top: 13vh;
+    justify-content: center;
+    align-items: center;
+}
+.card-text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
