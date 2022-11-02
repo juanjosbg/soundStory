@@ -8,6 +8,7 @@
     <title>Multitud Herrante || inicio</title>
 
     <!-- css estructure -->
+    <link rel="stylesheet" href="/css/Nav.css">
     <link rel="stylesheet" href="css/styles.css">
     <!-- icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +20,7 @@
             <div class="row">
                 <div class="col-12">
                     <!--  Modal-->
-                    <div class="icon-modal">
+                    <div class="icon-modal" id="navbar">
                         <input type="checkbox" id="btn-modal">
                         <label for="btn-modal" class="lbl-modal">
                             <i class='col-icon bx bx-info-circle'></i>
@@ -58,6 +59,8 @@
                         </div>
                     </div>
 
+                    <!----------------------------->
+                    <!-- Red social -->
                     <div id="redesSociales" class="red">
                         <div id="facebook" class="social-red">
                             <a href="http://www.facebook.com/sharer.php?u=https://proyect-soundstory.surge.sh/"
@@ -80,13 +83,14 @@
                             </a>
                         </div>
                     </div>
+
+                    <!----------------------------->
                     <!-- Video -->
-                    <div class="videos">
+                    <div class="videos" >
                         <div class="active initial closing video">
                             <!--controls muestra la barra de play -->
-                            <video src="videos/ESCENA 1.mp4" id="video-manager"
-                                class="custom-video video-js vjs-big-play-centered video-selector" preload="auto"
-                                controls>
+                            <video src="videos/Scnena1.mp4" id="video-manager"
+                                class="custom-video video-js vjs-big-play-centered video-selector" preload="auto">
                                 <!-- <source src="videos/ESCENA 1.mp4" type="video/mp4"> -->
                             </video>
                         </div>
@@ -99,7 +103,7 @@
                                 style="visibility: hidden;">
                         </div>
 
-                        <div class="menu hide">
+                        <!-- <div class="menu hide">
                             <div class="menu-wrapper">
                                 <div class="initial hide letter">
                                     <h3>Llego la hora de que tomes una decisi&oacute;n.</h1>
@@ -107,12 +111,13 @@
                                 </div>
                                 <div class="options hide" id="btn-show">
                                     <ul>
-                                        <li><a href="Escena1/decision-A.html" id="cat-person">Tomar decisi&oacute;n</a>
+                                        <li>
+                                            <a href="Escena1/decision-A.html" id="cat-person">Tomar decisi&oacute;n</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- Icons -->
                     <img id="play-volume" class="volumen" src="images/Volumen1.png" alt="Btn Volumen">
@@ -125,12 +130,12 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <!-- <span class="close">&times;</span> -->
-                <p>MODAL 1 PRUEBA</p>
+                <p>Toma la 1 decisi&oacute;n</p>
 
                 <div class="cont-modals">
                     <!-- link to another pages like google.com or faceboo.com -->
                     <button class="card-options card" id="next-vid"
-                        onclick="nextVideo('myModal', 'videos/ESCENA 2.mp4')">
+                        onclick="nextVideo('myModal', 'videos/Scnena2.mp4')">
                         <div class="br-cardbod">
                             <div class="card-body">
                                 <h5 class="card-text">Change video escena 2</h5>
@@ -139,7 +144,7 @@
                     </button>
 
                     <button class="card-options card2" id="next-vid"
-                        onclick="nextVideo('myModal', 'videos/ESCENA 3.mp4')">
+                        onclick="nextVideo('myModal', 'videos/Scnena3.mp4')">
                         <div class="br-cardbod">
                             <div class="card-body">
                                 <h5 class="card-text">Change video escena 3</h5>
@@ -148,7 +153,7 @@
                     </button>
 
                     <button class="card-options card3" id="next-vid"
-                        onclick="nextVideo('myModal', 'videos/ESCENA 4.mp4')">
+                        onclick="nextVideo('myModal', 'videos/Scnena4.mp4')">
                         <div class="br-cardbod">
                             <div class="card-body">
                                 <h5 class="card-text">Change video escena 4</h5>
@@ -164,12 +169,12 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <!-- <span class="close">&times;</span> -->
-                <p>MODAL 2 PRUEBA</p>
+                <p>Toma la 2 decisi&oacute;n</p>
 
                 <div class="cont-modals">
                     <!-- link to another pages like google.com or faceboo.com -->
                     <button class="card-options card4" id="next-vid"
-                        onclick="nextVideo('myModal2', 'videos/ESCENA 5.mp4')">
+                        onclick="nextVideo('myModal2', 'videos/Scnena5.mp4')">
                         <div class="br-cardbod">
                             <div class="card-body">
                                 <h5 class="card-text">Change video escena 5</h5>
@@ -178,7 +183,7 @@
                     </button>
 
                     <button class="card-options card5" id="next-vid"
-                        onclick="nextVideo('myModal2', 'videos/ESCENA 6.mp4')">
+                        onclick="nextVideo('myModal2', 'videos/Scnena6.mp4')">
                         <div class="br-cardbod">
                             <div class="card-body">
                                 <h5 class="card-text">Change video escena 6</h5>
@@ -194,25 +199,30 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <!-- <span class="close">&times;</span> -->
-                <p>MODAL 3 PRUEBA</p>
+                <p>Toma la 3 decisi&oacute;n</p>
 
-                <div class="cont-modals ">
-                    <div id="facebook" class="social-red socialRed">
-                        <a href="http://www.facebook.com/sharer.php?u=https://proyect-soundstory.surge.sh/"
-                            target="_blank" class="fa fa-facebook"> Facebook
-                        </a>
-                    </div>
-                    
-                    <div id="instagram" class="social-red socialRed">
-                        <a href="https://www.instagram.com/p/CjBKLMNon8T/?RelatoSonoro"
-                         target="_blank"  class="fa fa-instagram">Instagram
-                        </a>
-                    </div>
-
-                    <div id="whatsapp" class="social-red socialRed">
-                        <a href="http://api.whatsapp.com/send?text=https://proyect-soundstory.surge.sh/"
-                            target="_blank" class="fa fa-whatsapp">whatsapp
-                        </a>
+                <div class="cont-modals">
+                    <div class="redes-socials">
+                        <div id="facebook" class="Red-social">
+                            <a href="http://www.facebook.com/sharer.php?u=https://proyect-soundstory.surge.sh/"
+                                target="_blank" class="fa fa-facebook">
+                                <i class='bx bx-red-social bxl-facebook-square'></i>
+                            </a>
+                        </div>
+                        
+                        <div id="whatsapp" class="Red-social">
+                            <a href="http://api.whatsapp.com/send?text=https://proyect-soundstory.surge.sh/"
+                                target="_blank" class="fa fa-whatsapp">
+                                <i class='bx bx-red-social bxl-whatsapp'></i>
+                            </a>
+                        </div>
+    
+                        <div id="instagram" class="Red-social">
+                            <a href="https://www.instagram.com/p/CjBKLMNon8T/?RelatoSonoro" target="_blank"
+                                class="fa fa-instagram">
+                                <i class='bx bx-red-social bxl-instagram'></i>
+                            </a>
+                        </div>
                     </div>
 
                     <button class="btn btn-primary" id="next-vid" onclick="recargarHistoria('myModal3')">
@@ -224,6 +234,7 @@
         
     </main>
     <!-- Js -->
+    <script src="/js/Nav.js"></script>
     <script src="js/player.js"></script>
     <!-- icons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

@@ -1,4 +1,4 @@
-window.onload = inicio;
+/* window.onload = inicio; */
 
 let videoRef = document.getElementById("video-manager")
 let modal = document.getElementById("myModal");
@@ -12,9 +12,9 @@ document.getElementById("play-volume").addEventListener("click", unMuted);
 document.getElementById("btn-play").addEventListener("click", playVid);
 document.getElementById("btn-pause").addEventListener("click", pauseVid);
 
-function inicio() {
+/* function inicio() {
     document.querySelector(".volumen").onclick = volumen;
-}
+} */
 
 function unMuted() {
     if (document.getElementById("video-manager").muted) {
@@ -48,27 +48,27 @@ function pauseVid() {
 
 videoRef.addEventListener("timeupdate", function () {
     if (contador == 1) { //Modal 1
-        if (videoRef.currentTime >= 3) {
+        if (videoRef.currentTime >= 54) {
             modal.style.display = "block";
 
         }
     } else if (contador == 2) { //Modal 2
         let durationVideo = videoRef.duration;
-        if (videoRef.currentTime >= (durationVideo - 3)) {
+        if (videoRef.currentTime >= (durationVideo - 1)) {
             modal2.style.display = "block";
         }
     } else {
         let durationVideo = videoRef.duration;
-        if (videoRef.currentTime >= (durationVideo - 2)) {
+        if (videoRef.currentTime >= (durationVideo - 1)) {
             redesSociales.style.display = "none";
             modal3.style.display = "block";
         }
     }
 });
 
-span.onclick = function () {
+/* span.onclick = function () {
     modal.style.display = "none";
-}
+} */
 
 function nextVideo(idmodal, srcvideo) {
     videoRef.currentTime = 0;
@@ -81,7 +81,7 @@ function nextVideo(idmodal, srcvideo) {
 
 function recargarHistoria(idmodal) {
     contador = 1;
-    videoRef.src = "/videos/ESCENA 1.mp4";
+    videoRef.src = "/videos/Scnena1.mp4";
     let modal = document.getElementById(idmodal);
     modal.style.display = "none";
     redesSociales.style.display = "block";
