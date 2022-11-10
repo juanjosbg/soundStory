@@ -8,24 +8,17 @@ let span = document.getElementsByClassName("close")[0];
 let redesSociales = document.getElementById("redesSociales");
 let contador = 1;
 
-document.getElementById("play-volume").addEventListener("click", unMuted);
 document.getElementById("btn-play").addEventListener("click", playVid);
 document.getElementById("btn-pause").addEventListener("click", pauseVid);
 
-/* function inicio() {
-    document.querySelector(".volumen").onclick = volumen;
-} */
+document.getElementById("btn-volumen").addEventListener("click", unMutedVid);
+document.getElementById("btn-mute").addEventListener("click", unMutedVid);
 
-function unMuted() {
-    if (document.getElementById("video-manager").muted) {
-        document.getElementById("video-manager").muted = false;
-    } else {
-        document.getElementById("video-manager").muted = true;
-    }
-}
+/*
+    fUNCTION PLAY / PAUSE
+    ============================================================= 
+*/
 
-
-/* fUNCTION PLAY / PAUSE */
 function play() {
     if (vid.paused) {
         vid.play();
@@ -37,7 +30,11 @@ function play() {
 }
 
 
-/* BTN PLAY /PAUSE  */
+/*
+    BTN PLAY /PAUSE 
+    ============================================================= 
+*/
+
 function playVid() {
     document.getElementById("video-manager").play();
     document.getElementById("btn-play").style.visibility = "hidden";
@@ -70,9 +67,37 @@ videoRef.addEventListener("timeupdate", function () {
     }
 });
 
-/* span.onclick = function () {
-    modal.style.display = "none";
-} */
+
+/*
+    fUNCTION UNMUTE / MUTE
+    ============================================================= 
+*/
+
+function unMutedVid() {
+    if (document.getElementById("video-manager").muted) {
+        document.getElementById("video-manager").muted = false;
+        /* ==== */
+        document.getElementById("btn-volumen").style.visibility = "hidden";
+        document.getElementById("btn-mute").style.visibility = "visible";
+    } else {
+        document.getElementById("video-manager").muted = true;
+        /* === */
+        document.getElementById("btn-mute").style.visibility = "hidden";
+        document.getElementById("btn-volumen").style.visibility = "visible";
+    }
+}
+
+/*
+    BTN UNMUTE / MUTE 
+    ============================================================= 
+*/
+
+
+
+
+/*
+    ============================================================= 
+*/
 
 function nextVideo(idmodal, srcvideo) {
     videoRef.currentTime = 0;

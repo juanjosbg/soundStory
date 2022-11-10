@@ -253,6 +253,7 @@ header {
     border-bottom: 2px solid #e5e5e5;
 }
 
+
 /* ========================================== */
 /* Redes Sociales */
 .red {
@@ -348,21 +349,6 @@ header {
 }
 
 
-.play {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    height: 98%;
-    padding: 0;
-    top: 0;
-}
-
-.play:hover .fil1 {
-    fill: #fff;
-}
-
 .menu {
     max-width: 100%;
     height: 1149px;
@@ -412,15 +398,65 @@ header {
         padding-right: 0;
     }
 }
+/* ========================================== */
+/* CtrolsVideos */
+.CtrolsVideos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
-/* ===================== */
-/* Parte de los icons */
-#play-volume {
+/* Btn Play */
+.play {
+    display: flex;
+    align-items: stretch;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.play:hover .fil1 {
+    fill: #fff;
+}
+
+.ImgsPlayPause{
+    object-fit: cover;
+    width: 6%;
+    justify-content: right;
+}
+.PlayBtn{
+    position:fixed;
+    margin-left: -15vh;
+    margin-top: 12px;
+}
+.pauseBtn{
+    margin-right: 15vh;
+}
+
+
+/* Btn mute / unmute  */
+.mute{
+    display: flex;
+    align-items: stretch;
+}
+
+#btn-volumen, #btn-mute {
     position: absolute;
     right: 0px;
-    top: 0px;
-    width: 8rem;
-    height: 8rem;
+    top: 10px;
+    width: 5rem;
+    object-fit: cover;
+}
+
+.ImgsVolumenMute{
+    object-fit: cover;
+    width: 6%;
+    justify-content: right;
 }
 
 /* ==================================== */
@@ -497,10 +533,10 @@ header {
         margin-left: -7px;
         margin-top: -7px;
     }
-    #play-volume {
+    /* #play-volume {
         width: 6rem;
         height: 6rem;
-    }
+    } */
 }
 
 
