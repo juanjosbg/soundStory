@@ -77,13 +77,13 @@ function unMutedVid() {
     if (document.getElementById("video-manager").muted) {
         document.getElementById("video-manager").muted = false;
         /* ==== */
-        document.getElementById("btn-volumen").style.visibility = "hidden";
-        document.getElementById("btn-mute").style.visibility = "visible";
+        document.getElementById("btn-mute").style.visibility = "hidden";
+        document.getElementById("btn-volumen").style.visibility = "visible";
     } else {
         document.getElementById("video-manager").muted = true;
         /* === */
-        document.getElementById("btn-mute").style.visibility = "hidden";
-        document.getElementById("btn-volumen").style.visibility = "visible";
+        document.getElementById("btn-volumen").style.visibility = "hidden";
+        document.getElementById("btn-mute").style.visibility = "visible";
     }
 }
 

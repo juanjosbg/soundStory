@@ -398,9 +398,10 @@ header {
         padding-right: 0;
     }
 }
+
 /* ========================================== */
 /* CtrolsVideos */
-.CtrolsVideos{
+.CtrolsVideos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -424,28 +425,31 @@ header {
     fill: #fff;
 }
 
-.ImgsPlayPause{
+.ImgsPlayPause {
     object-fit: cover;
     width: 6%;
     justify-content: right;
 }
-.PlayBtn{
-    position:fixed;
+
+.PlayBtn {
+    position: fixed;
     margin-left: -15vh;
     margin-top: 12px;
 }
-.pauseBtn{
+
+.pauseBtn {
     margin-right: 15vh;
 }
 
 
 /* Btn mute / unmute  */
-.mute{
+.mute {
     display: flex;
     align-items: stretch;
 }
 
-#btn-volumen, #btn-mute {
+#btn-volumen,
+#btn-mute {
     position: absolute;
     right: 0px;
     top: 10px;
@@ -453,7 +457,7 @@ header {
     object-fit: cover;
 }
 
-.ImgsVolumenMute{
+.ImgsVolumenMute {
     object-fit: cover;
     width: 6%;
     justify-content: right;
@@ -481,11 +485,6 @@ header {
 
     .card-text {
         font-size: 16px !important;
-    }
-
-    .informacion-conted {
-        flex-direction: column;
-        flex-wrap: wrap;
     }
 
     .info1 h4 {
@@ -516,10 +515,10 @@ header {
         height: 12.5vh;
         margin-left: 10px;
     }
-    
+
 }
 
-@media (min-width: 640px) and (min-height: 360px){
+@media (min-width: 640px) and (min-height: 360px) {
     .lbl-modal {
         margin-top: 15px;
         width: 10%;
@@ -533,60 +532,99 @@ header {
         margin-left: -7px;
         margin-top: -7px;
     }
+
     /* #play-volume {
         width: 6rem;
         height: 6rem;
     } */
 }
-
-
-@media (min-width: 768px) {
+@media only screen and (max-width: 600px) {
+    .col-icon {
+        font-size: 43px;
+        color: #fff;
+        margin-left: -11px;
+        margin-top: -10px;
+    }
+    .lbl-modal {
+        margin-top: 6px;
+        width: 12%;
+        height: 14.5vh;
+        margin-left: 10px;
+    }
     .modal {
         width: 90%;
         left: 10vh;
     }
-
-    .subtile p {
-        font-family: 'Quicksand';
-        letter-spacing: 1px;
-        font-size: 3rem;
-    }
-
-    .modal-content {
-        margin: 15% auto !important;
-        padding: 20px !important;
-        max-width: 70% !important;
-    }
-
-    .card-text {
-        font-size: 17px !important;
-    }
-
+    
     .informacion-conted {
-        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* Btn Play / Pause */
+    .ImgsPlayPause {
+        object-fit: cover;
+        width: 12%;
+        justify-content: right;
     }
 
-    .info1 h4 {
-        text-align: left;
-        font-size: 40px;
-        margin-left: -14px;
-
+    .PlayBtn {
+        position: fixed;
+        margin-left: -17vh;
+        margin-top: 12px;
     }
 
-    .list__show {
-        text-align: left;
-        font-size: 22px;
-        line-height: 6vh;
-        margin-left: -14px;
+    .pauseBtn {
+        margin-top: -32px;
+        margin-right: 15vh;
     }
 
-    .info2 {
-        margin-bottom: 0;
-        margin-top: 0;
+    /* Volumne / mute */
+    #btn-volumen, #btn-mute{
+        width: 3rem;
+    }
+}
+
+@media (min-width: 824px) {
+    .lbl-modal {
+        margin-top: 15px;
+        width: 7.8%;
+        height: 17.5vh;
+        margin-left: 10px;
+    }
+    .modal {
+        width: 90%;
+        left: 10vh;
+    }
+    
+    .informacion-conted {
+        flex-wrap: wrap;
+    }
+    /* Btn Play / Pause */
+    .ImgsPlayPause {
+        object-fit: cover;
+        width: 9%;
+        justify-content: right;
     }
 
-    .info-a {
-        font-size: 32px;
+    .PlayBtn {
+        position: fixed;
+        margin-left: -23vh;
+        margin-top: 12px;
+    }
+
+    .pauseBtn {
+        margin-right: 23vh;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .modal {
+        width: 90%;
+        left: 10vh;
+    }
+    .videos video {
+        height: 100vh;
+        width: 100%;
     }
 
     .lbl-modal {
@@ -596,15 +634,48 @@ header {
         margin-left: 10px;
     }
 
-    .videos video {
-        height: 100vh;
-        width: 100%;
+    .list__show {
+        text-align: left;
+        font-size: 22px;
+        line-height: 6vh;
+        margin-left: -14px;
     }
+
+    .info1 h4 {
+        text-align: left;
+        font-size: 40px;
+        margin-left: -14px;
+
+    }
+
+    .informacion-conted {
+        flex-direction: row;
+    }
+
+    /* Btn Play / Pause */
+    .PlayBtn {
+        position: fixed;
+        margin-left: -15vh;
+        margin-top: 12px;
+    }
+    
+    .ImgsPlayPause {
+        object-fit: cover;
+        width: 6%;
+        justify-content: right;
+    }
+
+    .ImgsPlayPause {
+        object-fit: cover;
+        width: 6%;
+        justify-content: right;
+    }
+    
+    .pauseBtn {
+        margin-right: 15vh;
+    }
+
 }
-
-@media (min-width: 992px) {}
-
-@media (min-width: 1200px) {}
 
 @media (min-width: 1400px) {}
 
@@ -657,13 +728,14 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.redes-socials{
+
+.redes-socials {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.Red-social{
+.Red-social {
     margin-right: 8px;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
 }
