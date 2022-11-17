@@ -103,14 +103,37 @@ function nextVideo(idmodal, srcvideo) {
     videoRef.currentTime = 0;
     let modal = document.getElementById(idmodal);
     modal.style.display = "none";
-    videoRef.src = srcvideo;
-    videoRef.play();
+    switch (srcvideo) {
+        case 2:
+            videoRef.src = "https://puebas.s3.amazonaws.com/Scnena2.mp4";
+            videoRef.play();
+        break;
+        case 3:
+            videoRef.src = "https://puebas.s3.amazonaws.com/Scnena3.mp4";
+            videoRef.play();
+        break;
+        case 4:
+            videoRef.src = "https://puebas.s3.amazonaws.com/Scnena4.mp4";
+            videoRef.play();
+        break;
+        case 5:
+            videoRef.src = "https://puebas.s3.amazonaws.com/Scnena5.mp4";
+            videoRef.play();
+        break;
+        case 6:
+            videoRef.src = "https://puebas.s3.amazonaws.com/Scnena6.mp4";
+            videoRef.play();
+        break;
+    
+        default:
+            break;
+    }
     contador++;
 }
 
 function recargarHistoria(idmodal) {
     contador = 1;
-    videoRef.src = "/videos/Scnena1.mp4";
+    videoRef.src = "https://puebas.s3.amazonaws.com/Scnena1.mp4";
     let modal = document.getElementById(idmodal);
     modal.style.display = "none";
     redesSociales.style.display = "block";
